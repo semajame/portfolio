@@ -67,7 +67,7 @@
         <ul class="list-disc list-inside mt-2 text-black">
           <li>Frontend: HTML5, CSS3, JavaScript</li>
           <li>Frameworks: VueJS, Nuxt, Angular, Tailwind, Bootstrap5, SCSS</li>
-          <li>Backend: Nextjs, Nodejs, Mysql, Expressjs</li>
+          <li>Backend: Nestjs, Nodejs, Mysql, Expressjs</li>
           <li>Developer Tools: Figma, VS Code, Git, GitHub</li>
         </ul>
       </div>
