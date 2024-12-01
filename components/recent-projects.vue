@@ -1,0 +1,89 @@
+<template>
+  <div class="bento col-span-3">
+    <div class="flex justify-between items-center">
+      <h3 class="font-bold flex items-center gap-3">
+        <svg
+          data-testid="geist-icon"
+          height="16"
+          stroke-linejoin="round"
+          viewBox="0 0 16 16"
+          width="16"
+          style="color: currentcolor"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 0.0994263L8.40611 0.360987L15.6561 5.03048L16 5.25197V5.66102V10.3305V10.7396L15.6561 10.961L8.40611 15.6305L8 15.8921L7.59389 15.6305L0.343892 10.961L0 10.7396V10.3305V5.66102V5.25197L0.343892 5.03048L7.59389 0.360987L8 0.0994263ZM1.5 9.16029L3.24781 7.99577L1.5 6.83124V9.16029ZM2.0654 5.70591L4.375 7.24474L7.375 5.24591L7.375 2.28616L2.0654 5.70591ZM11.625 7.24474L8.625 5.24591V2.28616L13.9346 5.70591L11.625 7.24474ZM14.5 6.83124L12.7522 7.99577L14.5 9.16029V6.83124ZM10.4978 7.99577L8 6.33153L5.50219 7.99577L8 9.66L10.4978 7.99577ZM7.375 10.7456L4.375 8.74679L2.0654 10.2856L7.375 13.7054V10.7456ZM8.625 13.7054L13.9346 10.2856L11.625 8.74679L8.625 10.7456V13.7054Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+        Recent Projects
+      </h3>
+      <NuxtLink to="/projects" class="text-gray-300 text-xs">
+        View all ->
+      </NuxtLink>
+    </div>
+
+    <div class="my-5 grid grid-cols-2 grid-rows-2 gap-2">
+      <NuxtLink
+        to="https://greenery-ecommerce.vercel.app/"
+        target="_blank"
+        class="bento hover:-translate-y-0.5 transition-all duration-200"
+      >
+        <h3 class="text-sm font-bold">The Greenery</h3>
+        <p class="text-xs my-1">Ecommerce</p>
+        <p
+          class="link text-xs border border-black p-2 bg-black rounded-md mt-2"
+        >
+          greenery-ecommerce.vercel.app
+        </p>
+      </NuxtLink>
+
+      <NuxtLink
+        to="https://grand-standard-hotel.vercel.app/"
+        target="_blank"
+        class="bento hover:-translate-y-0.5 transition-all duration-200"
+      >
+        <h3 class="text-sm font-bold">Grand Standard</h3>
+        <p class="text-xs my-1">Hotel Website</p>
+        <p
+          class="link text-xs border border-black p-2 bg-black rounded-md mt-2"
+        >
+          grand-standard-hotel.vercel.app
+        </p>
+      </NuxtLink>
+      <NuxtLink
+        to="https://crypto-currency-x.vercel.app/"
+        target="_blank"
+        class="bento hover:-translate-y-0.5 transition-all duration-200"
+      >
+        <h3 class="text-sm font-bold">CryptoCurrency X</h3>
+        <p class="text-xs my-1">Real time crypto updates</p>
+        <p
+          class="link text-xs border border-black p-2 bg-black rounded-md mt-2"
+        >
+          crypto-currency-x.vercel.app
+        </p>
+      </NuxtLink>
+      <NuxtLink
+        to="https://bc-scheduling-1024.vercel.app/"
+        target="_blank"
+        class="bento hover:-translate-y-0.5 transition-all duration-200"
+      >
+        <h3 class="text-sm font-bold">Benedicto College Scheduling</h3>
+        <p class="text-xs my-1">Online class scheduling</p>
+        <p
+          class="link text-xs border border-black p-2 bg-black rounded-md mt-2"
+        >
+          bc-scheduling-1024.vercel.app
+        </p>
+      </NuxtLink>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss" scoped></style>

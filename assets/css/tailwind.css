@@ -33,6 +33,10 @@
     font-family: "Doto", sans-serif;
     font-weight: bold;
   }
+
+  .year {
+    font-size: 10px;
+  }
 }
 @layer components {
 }
