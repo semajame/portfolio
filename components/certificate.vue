@@ -23,49 +23,49 @@
     </div>
     <div class="flex gap-2 flex-col mt-3">
       <NuxtLink
-        to="https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing"
+        v-for="(event, index) in events"
+        :key="index"
+        :to="event.link"
         target="_blank"
-        class="text-xs border border-black p-2 bg-black rounded-md"
+        class="text-xs border border-black p-2 bg-black rounded-md hover:bg-slate-800 transition duration-150"
       >
-        <h5 class="text-sm font-bold">Cebu Interschool Hackathon</h5>
-        <p class="text-md link">Northwinds Hotel</p>
-      </NuxtLink>
-      <NuxtLink
-        to="https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing"
-        target="_blank"
-        class="text-xs border border-black p-2 bg-black rounded-md"
-      >
-        <h5 class="text-sm font-bold">Cebu Interschool Hackathon</h5>
-        <p class="text-md link">Cebu Provincial Capitol</p>
-      </NuxtLink>
-      <NuxtLink
-        to="https://drive.google.com/file/d/1hoAnJ9YUP2pLwuGZaG8RGVMrluhM5lFJ/view?usp=drive_link"
-        target="_blank"
-        class="text-xs border border-black p-2 bg-black rounded-md"
-      >
-        <h5 class="text-sm font-bold">Tour De Tech</h5>
-        <p class="text-md link">Bai Hotel</p>
-      </NuxtLink>
-      <NuxtLink
-        to="https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing"
-        target="_blank"
-        class="text-xs border border-black p-2 bg-black rounded-md"
-      >
-        <h5 class="text-sm font-bold">Tour De Tech: Talent Caravan</h5>
-        <p class="text-md link">Bai Hotel</p>
-      </NuxtLink>
-      <NuxtLink
-        to="https://certificates.psite7.org/storage/templates/diJO48BX5rT7azLHEurXch3KjJGXxMaGGbxjCod4.jpg"
-        target="_blank"
-        class="text-xs border border-black p-2 bg-black rounded-md"
-      >
-        <h5 class="text-sm font-bold">Cebu ICT Student Congress</h5>
-        <p class="text-md link">CTU Main Campus Gym</p>
+        <h5 class="text-md font-bold">{{ event.title }}</h5>
+        <p class="text-xs link">
+          {{ event.location }}
+        </p>
       </NuxtLink>
     </div>
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script setup>
+const events = [
+  {
+    title: "Cebu Interschool Hackathon",
+    location: "Northwinds Hotel",
+    link: "https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing",
+  },
+  {
+    title: "Cebu Interschool Hackathon",
+    location: "Cebu Provincial Capitol",
+    link: "https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing",
+  },
+  {
+    title: "Tour De Tech",
+    location: "Bai Hotel",
+    link: "https://drive.google.com/file/d/1hoAnJ9YUP2pLwuGZaG8RGVMrluhM5lFJ/view?usp=drive_link",
+  },
+  {
+    title: "Tour De Tech: Talent Caravan",
+    location: "Bai Hotel",
+    link: "https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing",
+  },
+  {
+    title: "Cebu ICT Student Congress",
+    location: "CTU Main Campus Gym",
+    link: "https://certificates.psite7.org/storage/templates/diJO48BX5rT7azLHEurXch3KjJGXxMaGGbxjCod4.jpg",
+  },
+];
+</script>
 
 <style></style>

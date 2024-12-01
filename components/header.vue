@@ -28,7 +28,7 @@
       </h3>
       <div class="flex items-center justify-start gap-3 mt-5">
         <NuxtLink
-          to="/"
+          to="/cv"
           class="btn bg-white text-black px-2 py-1.5 rounded-md text-xs flex justify-center items-center gap-1 hover:-translate-y-0.5 transition-all duration-200"
           type="button"
         >

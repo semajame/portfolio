@@ -19,71 +19,58 @@
         </svg>
         Recent Projects
       </h3>
-      <NuxtLink to="/projects" class="text-gray-300 text-xs">
+      <!-- <NuxtLink to="/projects" class="text-gray-300 text-xs">
         View all ->
-      </NuxtLink>
+      </NuxtLink> -->
     </div>
 
     <div class="my-5 grid grid-cols-2 grid-rows-2 gap-2">
       <NuxtLink
-        to="https://greenery-ecommerce.vercel.app/"
+        v-for="(project, index) in projects"
+        :key="index"
+        :to="project.link"
         target="_blank"
         class="bento hover:-translate-y-0.5 transition-all duration-200"
       >
-        <h3 class="text-sm font-bold">The Greenery</h3>
-        <p class="text-xs my-1">Ecommerce</p>
+        <h3 class="text-sm font-bold">{{ project.title }}</h3>
+        <p class="text-xs my-1">{{ project.description }}</p>
         <p
           class="link text-xs border border-black p-2 bg-black rounded-md mt-2"
         >
-          greenery-ecommerce.vercel.app
-        </p>
-      </NuxtLink>
-
-      <NuxtLink
-        to="https://grand-standard-hotel.vercel.app/"
-        target="_blank"
-        class="bento hover:-translate-y-0.5 transition-all duration-200"
-      >
-        <h3 class="text-sm font-bold">Grand Standard</h3>
-        <p class="text-xs my-1">Hotel Website</p>
-        <p
-          class="link text-xs border border-black p-2 bg-black rounded-md mt-2"
-        >
-          grand-standard-hotel.vercel.app
-        </p>
-      </NuxtLink>
-      <NuxtLink
-        to="https://crypto-currency-x.vercel.app/"
-        target="_blank"
-        class="bento hover:-translate-y-0.5 transition-all duration-200"
-      >
-        <h3 class="text-sm font-bold">CryptoCurrency X</h3>
-        <p class="text-xs my-1">Real time crypto updates</p>
-        <p
-          class="link text-xs border border-black p-2 bg-black rounded-md mt-2"
-        >
-          crypto-currency-x.vercel.app
-        </p>
-      </NuxtLink>
-      <NuxtLink
-        to="https://bc-scheduling-1024.vercel.app/"
-        target="_blank"
-        class="bento hover:-translate-y-0.5 transition-all duration-200"
-      >
-        <h3 class="text-sm font-bold">Benedicto College Scheduling</h3>
-        <p class="text-xs my-1">Online class scheduling</p>
-        <p
-          class="link text-xs border border-black p-2 bg-black rounded-md mt-2"
-        >
-          bc-scheduling-1024.vercel.app
+          {{ project.displayLink }}
         </p>
       </NuxtLink>
     </div>
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+const projects = [
+  {
+    title: "The Greenery",
+    description: "Ecommerce",
+    link: "https://greenery-ecommerce.vercel.app/",
+    displayLink: "greenery-ecommerce.vercel.app",
+  },
+  {
+    title: "Grand Standard",
+    description: "Hotel Website",
+    link: "https://grand-standard-hotel.vercel.app/",
+    displayLink: "grand-standard-hotel.vercel.app",
+  },
+  {
+    title: "CryptoCurrency X",
+    description: "Real time crypto updates",
+    link: "https://crypto-currency-x.vercel.app/",
+    displayLink: "crypto-currency-x.vercel.app",
+  },
+  {
+    title: "Benedicto College Scheduling",
+    description: "Online class scheduling",
+    link: "https://bc-scheduling-1024.vercel.app/",
+    displayLink: "bc-scheduling-1024.vercel.app",
+  },
+];
 </script>
 
 <style lang="scss" scoped></style>

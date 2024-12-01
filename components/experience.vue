@@ -19,104 +19,28 @@
     </h3>
     <div class="flex flex-col items-start space-y-8 py-5 text-white">
       <!-- Experience Entry 1 (Latest) -->
-      <div class="flex items-center space-x-4 w-full group">
+      <div
+        v-for="(entry, index) in experiences"
+        :key="index"
+        class="flex items-center space-x-4 w-full group"
+      >
         <div class="flex-none">
           <div
             class="w-2.5 h-2.5 bg-black group-hover:bg-gray-300 transition duration-300 border border-gray rounded-full"
           ></div>
-          <div class="h-full border-l-2 border-gray-700 ml-1.5"></div>
+          <div
+            v-if="!entry.isLast"
+            class="h-full border-l-2 border-gray-700 ml-1.5"
+          ></div>
         </div>
         <div class="w-full">
-          <p class="text-sm font-semibold">BS Information Technology</p>
+          <p class="text-sm font-semibold">{{ entry.title }}</p>
           <div class="flex justify-between items-center">
-            <p class="text-xs text-gray-400">Benedicto College</p>
+            <p class="text-xs text-gray-400">{{ entry.location }}</p>
             <div
               class="border border-gray-500 px-2 py-1 rounded-full flex justify-center items-center gap-1 text-white year"
             >
-              2025
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Experience Entry 1 -->
-      <div class="flex items-center space-x-4 w-full group">
-        <div class="flex-none">
-          <div
-            class="w-2.5 h-2.5 bg-black group-hover:bg-gray-300 transition duration-300 border border-gray rounded-full"
-          ></div>
-          <div class="h-full border-l-2 border-gray-700 ml-1.5"></div>
-        </div>
-        <div class="w-full">
-          <p class="text-sm font-semibold">CHED Tour De Tech</p>
-          <div class="flex justify-between">
-            <p class="text-xs text-gray-400">Bai Hotel</p>
-            <div
-              class="border border-gray-500 px-2 py-1 rounded-full flex justify-center items-center gap-1 text-white year"
-            >
-              2024
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Experience Entry 2 -->
-      <div class="flex items-center space-x-4 w-full group">
-        <div class="flex-none">
-          <div
-            class="w-2.5 h-2.5 bg-black group-hover:bg-gray-300 transition duration-300 border border-gray rounded-full"
-          ></div>
-          <div class="h-full border-l-2 border-gray-700 ml-1.5"></div>
-        </div>
-        <div class="w-full">
-          <p class="text-sm font-semibold">Cebu Interschool Hackathon</p>
-          <div class="flex justify-between">
-            <p class="text-xs text-gray-400">Cebu Provincial Capitol</p>
-            <div
-              class="border border-gray-500 px-2 py-1 rounded-full flex justify-center items-center gap-1 text-white year"
-            >
-              2024
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Experience Entry 3 -->
-      <div class="flex items-center space-x-4 w-full group">
-        <div class="flex-none">
-          <div
-            class="w-2.5 h-2.5 bg-black group-hover:bg-gray-300 transition duration-300 border border-gray rounded-full"
-          ></div>
-          <div class="h-full border-l-2 border-gray-700 ml-1.5"></div>
-        </div>
-        <div class="w-full">
-          <p class="text-sm font-semibold">Cebu Interschool Hackathon</p>
-          <div class="flex justify-between">
-            <p class="text-xs text-gray-400">Northwinds Hotel</p>
-            <div
-              class="border border-gray-500 px-2 py-1 rounded-full flex justify-center items-center gap-1 text-white year"
-            >
-              2023
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Experience Entry 4 -->
-      <div class="flex items-center space-x-4 w-full group">
-        <div class="flex-none">
-          <div
-            class="w-2.5 h-2.5 bg-black group-hover:bg-gray-300 transition duration-300 border border-gray rounded-full"
-          ></div>
-        </div>
-        <div class="w-full">
-          <p class="text-sm font-semibold">PSITE Participant</p>
-          <div class="flex justify-between">
-            <p class="text-xs text-gray-400">CIT-U</p>
-            <div
-              class="border border-gray-500 px-2 py-1 rounded-full flex justify-center items-center gap-1 text-white year"
-            >
-              2023
+              {{ entry.year }}
             </div>
           </div>
         </div>
@@ -125,8 +49,38 @@
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+const experiences = [
+  {
+    title: "BS Information Technology",
+    location: "Benedicto College",
+    year: 2025,
+    isLast: false,
+  },
+  {
+    title: "Freelance Front-end Developer",
+    location: "Cebu, Mandaue City ",
+    year: 2024,
+    isLast: false,
+  },
+  {
+    title: "CHED Tour De Tech",
+    location: "Bai Hotel",
+    year: 2024,
+    isLast: false,
+  },
+  {
+    title: "Cebu Interschool Hackathon",
+    location: "Cebu Provincial Capitol",
+    year: 2024,
+    isLast: false,
+  },
+  {
+    title: "Cebu Interschool Hackathon",
+    location: "Northwinds Hotel",
+    year: 2023,
+    isLast: false,
+  },
+];
 </script>
-
 <style lang="scss" scoped></style>
