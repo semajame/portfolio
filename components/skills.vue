@@ -17,35 +17,19 @@
         ></path></svg
       >Skills
     </h3>
-    <div class="mt-5 mb-0 flex items-center gap-1">
-      <div>
+    <div
+      class="sm:mt-5 sm:mb-0 sm:flex sm:items-center sm:flex-row sm:gap-1 flex flex-col gap-3"
+    >
+      <div class="mt-2">
         <h3 class="text-sm">Frontend Development</h3>
 
         <div class="flex flex-wrap gap-1 mt-2">
           <div
-            class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1 text-white"
+            v-for="(skill, index) in skills"
+            :key="index"
+            class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-2 text-white"
           >
-            Vuejs
-          </div>
-          <div
-            class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1 text-white"
-          >
-            Angular
-          </div>
-          <div
-            class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1 text-white"
-          >
-            Nuxt
-          </div>
-          <div
-            class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1 text-white"
-          >
-            Tailwind
-          </div>
-          <div
-            class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1 text-white"
-          >
-            Bootstrap
+            {{ skill }}
           </div>
         </div>
       </div>
@@ -54,35 +38,11 @@
 
         <div class="flex flex-wrap gap-1 mt-2">
           <div
+            v-for="(technology, index) in technologies"
+            :key="index"
             class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1 text-white"
           >
-            MySQL
-          </div>
-          <div
-            class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1 text-white"
-          >
-            Nestjs
-          </div>
-          <div
-            class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1 text-white"
-          >
-            Expressjs
-          </div>
-          <div
-            class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1 text-white"
-          >
-            Nodejs
-          </div>
-
-          <div
-            class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1 text-white"
-          >
-            Github
-          </div>
-          <div
-            class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1 text-white"
-          >
-            Git
+            {{ technology }}
           </div>
         </div>
       </div>
@@ -90,8 +50,17 @@
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+const skills = ["Vuejs", "Angular", "Nuxt", "Tailwind", "Bootstrap"];
+
+const technologies = [
+  "MySQL",
+  "Nestjs",
+  "Expressjs",
+  "Nodejs",
+  "Github",
+  "Git",
+];
 </script>
 
 <style lang="scss" scoped></style>

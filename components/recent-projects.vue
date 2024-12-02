@@ -24,13 +24,15 @@
       </NuxtLink> -->
     </div>
 
-    <div class="my-5 grid grid-cols-2 grid-rows-2 gap-2">
+    <div
+      class="sm:my-5 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-2 flex flex-col gap-2 mt-5"
+    >
       <NuxtLink
         v-for="(project, index) in projects"
         :key="index"
         :to="project.link"
         target="_blank"
-        class="bento hover:-translate-y-0.5 transition-all duration-200"
+        class="sm:bento hover:-translate-y-0.5 transition-all duration-200"
       >
         <h3 class="text-sm font-bold">{{ project.title }}</h3>
         <p class="text-xs my-1">{{ project.description }}</p>
