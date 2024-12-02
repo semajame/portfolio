@@ -47,7 +47,7 @@
               fill="currentColor"
             ></path>
           </svg>
-          View CV</NuxtLink
+          View Resume</NuxtLink
         >
         <NuxtLink
           to="https://github.com/semajame/"

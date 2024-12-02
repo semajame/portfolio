@@ -113,6 +113,12 @@ const experiences = [
       "Showcased my passion for innovation and problem-solving. Highlighted my ability to thrive under pressure and my commitment to finding innovative solutions to real-world problems. Honed and improved teamwork and communication skills.",
   },
 ];
+
+useHead({
+  head: {
+    title: "Resume | James  ",
+  },
+});
 </script>
 
 <style scoped>

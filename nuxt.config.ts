@@ -10,5 +10,8 @@ export default defineNuxtConfig({
 
   app: {
     pageTransition: { name: "page", mode: "out-in" },
+    head: {
+      title: "James - Full Stack Developer",
+    },
   },
 });
