@@ -78,9 +78,29 @@
 <script setup>
 const experiences = [
   {
+    date: "June 2023 - November 2024",
+    title: "Freelance Frontend Developer",
+    location: "Cebu City, Mandaue",
+    description: "Created the frontend of a web based grading system.",
+  },
+  {
+    date: "November 7, 2024",
+    title: "CHED Tour De Tech Participant",
+    location: "Cebu City, Bai Hotel",
+    description:
+      "Attended an enriching seminar on technology innovation at Bai Hotel. Engaged with industry experts and peers. Acquired insights into the latest advancements in technology and its applications.",
+  },
+  {
+    date: "June 7, 2024",
+    title: "Cebu Interschool Hackathon",
+    location: "Cebu City, City Hall",
+    description:
+      "Created a solution for environmental problems in the community. Enhanced my intrapersonal skills such as focus, leadership, and time management. Improved my programming skills by integrating AI API.",
+  },
+  {
     date: "May 25, 2023",
     title: "Cebu Interschool Hackathon",
-    location: "Cebu City, Cebu",
+    location: "Cebu City, Northwinds Hotel",
     description:
       "Showcased my passion for innovation and problem-solving. Highlighted my ability to thrive under pressure and my commitment to finding innovative solutions to real-world problems. Honed and improved teamwork and communication skills.",
   },
@@ -91,32 +111,13 @@ const experiences = [
     description:
       "Enhanced skills and teaching methodologies, ultimately benefiting both students and colleagues in the IT education community. Actively contributed to discussions and knowledge, fostering collaboration with peers and the latest trends in the IT community. Demonstrating a commitment to professional development in the field of information technology education.",
   },
-  {
-    date: "June 7, 2024",
-    title: "Cebu Interschool Hackathon",
-    location: "Cebu City, Cebu",
-    description:
-      "Created a solution for environmental problems in the community. Enhanced my intrapersonal skills such as focus, leadership, and time management. Improved my programming skills by integrating AI API.",
-  },
-  {
-    date: "November 7, 2024",
-    title: "CHED Tour De Tech Participant",
-    location: "Cebu City, Bai Hotel",
-    description:
-      "Attended an enriching seminar on technology innovation at Bai Hotel. Engaged with industry experts and peers. Acquired insights into the latest advancements in technology and its applications.",
-  },
-  {
-    date: "June 2023 - November 2024",
-    title: "Freelance Frontend Developer",
-    location: "Cebu City, Mandaue",
-    description:
-      "Showcased my passion for innovation and problem-solving. Highlighted my ability to thrive under pressure and my commitment to finding innovative solutions to real-world problems. Honed and improved teamwork and communication skills.",
-  },
 ];
 
 useHead({
-  head: {
-    title: "Resume | James  ",
+  app: {
+    head: {
+      title: "Resume | James  ",
+    },
   },
 });
 </script>
