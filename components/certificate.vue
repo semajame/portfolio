@@ -41,16 +41,6 @@
 <script setup>
 const events = [
   {
-    title: "Cebu Interschool Hackathon",
-    location: "Northwinds Hotel",
-    link: "https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing",
-  },
-  {
-    title: "Cebu Interschool Hackathon",
-    location: "Cebu Provincial Capitol",
-    link: "https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing",
-  },
-  {
     title: "Tour De Tech",
     location: "Bai Hotel",
     link: "https://drive.google.com/file/d/1hoAnJ9YUP2pLwuGZaG8RGVMrluhM5lFJ/view?usp=drive_link",
@@ -64,6 +54,16 @@ const events = [
     title: "Cebu ICT Student Congress",
     location: "CTU Main Campus Gym",
     link: "https://certificates.psite7.org/storage/templates/diJO48BX5rT7azLHEurXch3KjJGXxMaGGbxjCod4.jpg",
+  },
+  {
+    title: "Cebu Interschool Hackathon",
+    location: "Northwinds Hotel",
+    link: "https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing",
+  },
+  {
+    title: "Cebu Interschool Hackathon",
+    location: "Cebu Provincial Capitol",
+    link: "https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing",
   },
 ];
 </script>

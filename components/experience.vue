@@ -27,11 +27,7 @@
       >
         <div class="flex-none">
           <div
-            class="w-2.5 h-2.5 bg-black group-hover:bg-gray-300 transition duration-300 border border-gray rounded-full"
-          ></div>
-          <div
-            v-if="!entry.isLast"
-            class="h-full border-l-2 border-gray-700 ml-1.5"
+            class="w-2.5 h-2.5 bg-black group-hover:bg-white transition duration-300 border border-gray rounded-full"
           ></div>
         </div>
         <div class="w-full">
@@ -54,33 +50,28 @@
 const experiences = [
   {
     title: "BS Information Technology",
-    location: "Benedicto College",
+    location: " Benedicto College",
     year: 2025,
-    isLast: false,
   },
   {
-    title: "Freelance Front-end Developer",
+    title: "Freelance Frontend Developer",
     location: "Cebu, Mandaue City ",
     year: 2024,
-    isLast: false,
   },
   {
-    title: "CHED Tour De Tech",
-    location: "Bai Hotel",
+    title: "Tour De Tech",
+    location: "Mandaue, Bai Hotel",
     year: 2024,
-    isLast: false,
   },
   {
     title: "Cebu Interschool Hackathon",
-    location: "Cebu Provincial Capitol",
+    location: "Cebu, Provincial Capitol",
     year: 2024,
-    isLast: false,
   },
   {
     title: "Cebu Interschool Hackathon",
-    location: "Northwinds Hotel",
+    location: "Cebu, Northwinds Hotel",
     year: 2023,
-    isLast: false,
   },
 ];
 </script>

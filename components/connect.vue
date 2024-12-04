@@ -35,7 +35,7 @@
           class="border-black p-2 bg-black rounded-md hover:-translate-y-0.5 transition-all duration-200"
         >
           <svg
-            class="w-5 h-5 invert"
+            class="w-5 h-5"
             fill="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -50,7 +50,7 @@
           class="border-black p-2 bg-black rounded-md hover:-translate-y-0.5 transition-all duration-200"
         >
           <svg
-            class="w-5 h-5 invert"
+            class="w-5 h-5"
             fill="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"
