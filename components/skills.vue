@@ -27,7 +27,7 @@
           <div
             v-for="(skill, index) in skills"
             :key="index"
-            class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-2 text-white"
+            class="text-xs border border-gray-500 px-2.5 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-2 text-white"
           >
             {{ skill }}
           </div>
@@ -40,7 +40,7 @@
           <div
             v-for="(technology, index) in technologies"
             :key="index"
-            class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1 text-white"
+            class="text-xs border border-gray-500 px-2.5 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1 text-white"
           >
             {{ technology }}
           </div>
@@ -51,7 +51,7 @@
 </template>
 
 <script setup>
-const skills = ["Vuejs", "Angular", "Nuxt", "Tailwind", "Bootstrap"];
+const skills = ["Vue", "Angular", "Nuxt", "Tailwind", "Bootstrap"];
 
 const technologies = [
   "MySQL",

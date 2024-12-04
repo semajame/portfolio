@@ -1,5 +1,6 @@
 <template>
-  <div class="bento col-span-2 row-span-2 col-start-3 row-start-1">
+  <div class="bento col-span-2 row-span-2 col-start-3 row-start-1 relative">
+    <div class="vertical-line" />
     <h3 class="font-bold flex items-center gap-3">
       <svg
         data-testid="geist-icon"
@@ -22,7 +23,7 @@
       <div
         v-for="(entry, index) in experiences"
         :key="index"
-        class="flex items-center space-x-4 w-full group"
+        class="flex items-center space-x-4 w-full group z-10 relative"
       >
         <div class="flex-none">
           <div

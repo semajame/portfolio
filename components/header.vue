@@ -1,5 +1,5 @@
 <template>
-  <header class="flex gap-5 items-center mb-5">
+  <header class="sm:flex sm:gap-5 sm:items-center sm:mb-5 my-5">
     <img
       src="/assets/img/james.jpg"
       alt=""
@@ -8,7 +8,7 @@
       height="160"
     />
 
-    <div class="text-white">
+    <div class="text-white my-3">
       <h2 class="font-bold text-3xl">James Anquillano</h2>
       <p class="flex items-center gap-1 text-sm mb-2">
         <svg
@@ -26,7 +26,7 @@
       <h3 class="mt-1 font-medium text-gray-200 text-md">
         Full-Stack Developer
       </h3>
-      <div class="flex items-center justify-start gap-3 mt-5">
+      <div class="flex items-center justify-start gap-3 mt-3">
         <NuxtLink
           to="/cv"
           class="btn bg-white text-black px-2 py-1.5 rounded-md text-xs flex justify-center items-center gap-1 hover:-translate-y-0.5 transition-all duration-200"

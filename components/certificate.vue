@@ -27,7 +27,7 @@
         :key="index"
         :to="event.link"
         target="_blank"
-        class="text-xs border border-black p-2 bg-black rounded-md hover:bg-slate-800 transition duration-150"
+        class="text-xs border border-black p-2 bg-black rounded-md hover:bg-slate-900 transition duration-150 hover:border-slate-900"
       >
         <h5 class="text-md font-bold">{{ event.title }}</h5>
         <p class="text-xs link">
