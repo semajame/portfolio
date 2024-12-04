@@ -48,7 +48,7 @@ const events = [
   {
     title: "Tour De Tech: Talent Caravan",
     location: "Bai Hotel",
-    link: "https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1jgn8KMQ8VEBNWQ3by8ybqSso_DfLLUIN/view?usp=sharing",
   },
   {
     title: "Cebu ICT Student Congress",
@@ -58,7 +58,7 @@ const events = [
   {
     title: "Cebu Interschool Hackathon",
     location: "Northwinds Hotel",
-    link: "https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1UE_tRg2FYI-URoTEJm_IgFtvIm3jzT26/view?usp=sharing",
   },
   {
     title: "Cebu Interschool Hackathon",
