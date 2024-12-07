@@ -19,9 +19,9 @@
         </svg>
         Recent Projects
       </h3>
-      <!-- <NuxtLink to="/projects" class="text-gray-300 text-xs">
+      <NuxtLink to="/projects" class="text-gray-300 text-xs">
         View all ->
-      </NuxtLink> -->
+      </NuxtLink>
     </div>
 
     <div
@@ -55,14 +55,17 @@ const projects = [
     displayLink: "greenery-ecommerce.vercel.app",
   },
   {
-    title: "Grand Standard",
-    description: "Hotel Website",
-    link: "https://grand-standard-hotel.vercel.app/",
-    displayLink: "grand-standard-hotel.vercel.app",
+    title: "Animal Kingdom",
+    description: "Real animal information using api",
+    link: "https://wild-kingdom.vercel.app/",
+    displayLink: "wild-kingdom.vercel.app",
+    tech: {
+      skills: ["Nuxt", "Tailwind"],
+    },
   },
   {
     title: "CryptoCurrency X",
-    description: "Real time crypto updates",
+    description: "Real time crypto updates using api",
     link: "https://crypto-currency-x.vercel.app/",
     displayLink: "crypto-currency-x.vercel.app",
   },

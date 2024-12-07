@@ -1,6 +1,9 @@
 <template>
-  <div class="bg-black min-h-screen max-w-screen-lg mx-auto">
+  <div class="bg-black w-full min-h-screen max-w-4xl mx-auto px-4 py-8">
+    <Header />
     <slot />
+
+    <Footer />
   </div>
 </template>
 

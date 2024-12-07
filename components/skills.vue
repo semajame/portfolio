@@ -51,7 +51,7 @@
 </template>
 
 <script setup>
-const skills = ["Vue", "Angular", "Nuxt", "Tailwind", "Bootstrap"];
+const skills = ["Vue", "Angular", "Nuxt", "Tailwind", "Bootstrap", "SCSS"];
 
 const technologies = [
   "MySQL",
