@@ -1,6 +1,11 @@
 <template>
   <div class="my-5">
-    <h1 class="text-white text-xl">All Projects</h1>
+    <div class="flex gap-5 justify-between">
+      <NuxtLink to="/" class="text-white hover:underline"
+        >&larr; Go Back</NuxtLink
+      >
+      <h1 class="text-white text-xl">All Projects</h1>
+    </div>
 
     <div
       class="sm:my-5 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-2 flex flex-col gap-3 mt-5"

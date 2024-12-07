@@ -1,68 +1,79 @@
 <template>
-  <div class="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg">
-    <!-- Header -->
-    <div class="text-center mb-6">
-      <h1 class="text-2xl font-bold text-black">Anquillano, James</h1>
-      <p class="text-sm text-black">jamesanquillano@gmail.com | 09369533064</p>
+  <div class="max-w-2xl mx-auto">
+    <div class="flex gap-5 justify-between">
+      <NuxtLink to="/" class="text-white hover:underline"
+        >&larr; Go Back</NuxtLink
+      >
+      <h1 class="text-white text-xl">Resume</h1>
     </div>
-    <!-- Horizontal Line -->
-    <hr class="border-gray-400 my-4" />
-    <!-- Objective -->
-    <div class="mb-8">
-      <h2 class="text-xl font-semibold text-black">Objective</h2>
-      <p class="text-sm mt-2 text-black">
-        To land a job in the IT industry that offers a dynamic and collaborative
-        work environment, fostering continuous learning and professional growth.
-        My adaptability and rapid learning capacity make me an asset that
-        thrives in dynamic work environments, consistently delivering results.
-      </p>
-    </div>
-    <!-- Horizontal Line -->
-    <hr class="border-gray-400 my-4" />
-    <!-- Education -->
-    <div class="mb-8">
-      <h2 class="text-xl font-semibold text-black">Education</h2>
-      <div>
-        <p class="text-sm font-bold text-black">2021 - 2025</p>
-        <p class="text-sm text-black">Benedicto College</p>
-        <p class="text-sm text-black">Mandaue, A.S Fortuna Cebu</p>
+    <div class="mt-5 p-6 bg-white shadow-md rounded-lg">
+      <!-- Header -->
+      <div class="text-center mb-6">
+        <h1 class="text-2xl font-bold text-black">Anquillano, James</h1>
         <p class="text-sm text-black">
-          Bachelor’s of Science in Information Technology
+          jamesanquillano@gmail.com | 09369533064
         </p>
       </div>
-    </div>
-    <!-- Horizontal Line -->
-    <hr class="border-gray-400 my-4" />
-    <!-- Experience -->
-    <div class="mb-8">
-      <h2 class="text-xl font-semibold text-black">Experience</h2>
-      <div v-for="(entry, index) in experiences" :key="index" class="mb-6">
-        <div class="flex gap-4 items-start">
-          <div>
-            <p class="text-sm font-bold text-black">{{ entry.date }}</p>
-            <p class="text-sm font-bold text-black">{{ entry.title }}</p>
-            <p class="text-sm text-black">{{ entry.location }}</p>
-            <p class="text-sm mt-2 text-black">{{ entry.description }}</p>
-          </div>
-        </div>
-        <!-- Line between items -->
-        <div
-          v-if="index < experiences.length - 1"
-          class="border-l-2 border-gray-400 ml-2 h-8"
-        ></div>
+      <!-- Horizontal Line -->
+      <hr class="border-gray-400 my-4" />
+      <!-- Objective -->
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold text-black">Objective</h2>
+        <p class="text-sm mt-2 text-black">
+          To land a job in the IT industry that offers a dynamic and
+          collaborative work environment, fostering continuous learning and
+          professional growth. My adaptability and rapid learning capacity make
+          me an asset that thrives in dynamic work environments, consistently
+          delivering results.
+        </p>
       </div>
-    </div>
-    <!-- Horizontal Line -->
-    <hr class="border-gray-400 my-4" />
-    <!-- Technical Skills -->
-    <div class="mb-8">
-      <h2 class="text-xl font-semibold text-black">Technical Skills</h2>
-      <ul class="list-disc list-inside mt-2 text-black">
-        <li>Frontend: HTML5, CSS3, JavaScript</li>
-        <li>Frameworks: VueJS, Nuxt, Angular, Tailwind, Bootstrap5, SCSS</li>
-        <li>Backend: Nestjs, Nodejs, Mysql, Expressjs</li>
-        <li>Developer Tools: Figma, VS Code, Git, GitHub</li>
-      </ul>
+      <!-- Horizontal Line -->
+      <hr class="border-gray-400 my-4" />
+      <!-- Education -->
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold text-black">Education</h2>
+        <div>
+          <p class="text-sm font-bold text-black">2021 - 2025</p>
+          <p class="text-sm text-black">Benedicto College</p>
+          <p class="text-sm text-black">Mandaue, A.S Fortuna Cebu</p>
+          <p class="text-sm text-black">
+            Bachelor’s of Science in Information Technology
+          </p>
+        </div>
+      </div>
+      <!-- Horizontal Line -->
+      <hr class="border-gray-400 my-4" />
+      <!-- Experience -->
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold text-black">Experience</h2>
+        <div v-for="(entry, index) in experiences" :key="index" class="mb-6">
+          <div class="flex gap-4 items-start">
+            <div>
+              <p class="text-sm font-bold text-black">{{ entry.date }}</p>
+              <p class="text-sm font-bold text-black">{{ entry.title }}</p>
+              <p class="text-sm text-black">{{ entry.location }}</p>
+              <p class="text-sm mt-2 text-black">{{ entry.description }}</p>
+            </div>
+          </div>
+          <!-- Line between items -->
+          <div
+            v-if="index < experiences.length - 1"
+            class="border-l-2 border-gray-400 ml-2 h-8"
+          ></div>
+        </div>
+      </div>
+      <!-- Horizontal Line -->
+      <hr class="border-gray-400 my-4" />
+      <!-- Technical Skills -->
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold text-black">Technical Skills</h2>
+        <ul class="list-disc list-inside mt-2 text-black">
+          <li>Frontend: HTML5, CSS3, JavaScript</li>
+          <li>Frameworks: VueJS, Nuxt, Angular, Tailwind, Bootstrap5, SCSS</li>
+          <li>Backend: Nestjs, Nodejs, Mysql, Expressjs</li>
+          <li>Developer Tools: Figma, VS Code, Git, GitHub</li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
