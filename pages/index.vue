@@ -1,6 +1,6 @@
 <!-- pages/index.vue -->
 <template>
-  <div class="">
+  <div>
     <main
       class="sm:grid sm:grid-cols-3 sm:grid-rows-2 sm:gap-2 flex flex-col gap-3"
     >

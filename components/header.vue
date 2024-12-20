@@ -2,7 +2,7 @@
   <header class="sm:flex sm:gap-5 sm:items-center sm:mb-5 my-5">
     <img
       src="/assets/img/james.jpg"
-      alt=""
+      alt="Profile Picture"
       class="rounded-lg object-cover w-40 h-40"
       width="160"
       height="160"

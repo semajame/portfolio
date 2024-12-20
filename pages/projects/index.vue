@@ -40,6 +40,21 @@
 </template>
 
 <script setup>
+import { useHead } from "#app";
+
+// Set up meta tags for the page
+useHead({
+  title: "Projects - James", // Set the dynamic page title
+  meta: [
+    {
+      hid: "description", // Use `hid` to ensure meta tags are uniquely identified
+      name: "description",
+      content:
+        "Explore all projects by James, including scheduling apps, e-commerce platforms, and more, built with modern frameworks like Angular, Vue, and Nuxt.", // Add a meaningful description
+    },
+  ],
+});
+
 const projects = [
   {
     title: "Benedicto College Scheduling",

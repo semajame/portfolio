@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black w-full min-h-screen max-w-4xl mx-auto px-4 py-8">
+  <div class="bg-black w-full min-h-screen max-w-4xl mx-auto px-4 pb-8 pt-2">
     <Header />
     <slot />
 

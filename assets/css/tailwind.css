@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;700&family=Doto:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -66,6 +64,4 @@
     background-color: black;
     border-radius: 0.375rem;
   }
-}
-@layer components {
 }
