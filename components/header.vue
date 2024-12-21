@@ -1,7 +1,7 @@
 <template>
   <header class="sm:flex sm:gap-5 sm:items-center sm:mb-5 my-5">
-    <img
-      src="/assets/img/james.jpg"
+    <NuxtImg
+      src="/assets/james_anq.webp"
       alt="Profile Picture"
       class="rounded-lg object-cover w-40 h-40"
       width="160"
@@ -28,9 +28,9 @@
       </h3>
       <div class="flex items-center justify-start gap-3 mt-3">
         <NuxtLink
-          to="/resume"
+          to="https://docs.google.com/document/d/112OLJD-Xgj8ZFYq11TL0M48Pj4RzdJum/edit?usp=sharing&ouid=101439099929747855943&rtpof=true&sd=true"
+          target="_blank"
           class="btn bg-white text-black px-2 py-1.5 rounded-md text-xs flex justify-center items-center gap-1 hover:-translate-y-0.5 transition-all duration-200"
-          type="button"
         >
           <svg
             data-testid="geist-icon"
