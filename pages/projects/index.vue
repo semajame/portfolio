@@ -63,6 +63,7 @@ const projects = [
     displayLink: "bc-scheduling-1024.vercel.app",
     tech: { skills: ["Angular", "Bootstrap", "Mysql", "Nestjs"] },
   },
+
   {
     title: "The Greenery",
     description: "Ecommerce",
@@ -73,7 +74,16 @@ const projects = [
     },
   },
   {
-    title: "Animal Kingdom",
+    title: "Apple Ui",
+    description: "Apple Ui",
+    link: "https://apple-uii.vercel.app/",
+    displayLink: "apple-uii.vercel.app",
+    tech: {
+      skills: ["Nuxt", "Tailwind"],
+    },
+  },
+  {
+    title: "Wild Kingdom",
     description: "Real animal information using api",
     link: "https://wild-kingdom.vercel.app/",
     displayLink: "wild-kingdom.vercel.app",
@@ -97,15 +107,6 @@ const projects = [
     displayLink: "grand-standard-hotel.vercel.app",
     tech: {
       skills: ["Vue", "SCSS"],
-    },
-  },
-  {
-    title: "Unork Agency",
-    description: "Agency Website",
-    link: "https://unork-agency-website.vercel.app/",
-    displayLink: "unork-agency-website.vercel.app",
-    tech: {
-      skills: ["Vue", "CSS"],
     },
   },
 ];
