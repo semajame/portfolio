@@ -20,20 +20,22 @@
       </svg>
       About
     </h3>
-    <p class="my-5 text-sm">
-      I'm a full-stack developer with strong skills in both front-end and
-      back-end technologies.
+    <p class="my-5 text-sm leading">
+      Hi there! 👋 I'm a Frontend Developer dedicated to creating beautiful,
+      responsive, and user-friendly websites. With experience in modern
+      frameworks like Vue and Nuxt.
+
       <br />
       <br />
-      My experience spans from making intuitive user interfaces to developing
-      robust server-side logic, always striving to create impactful solutions
-      that enhance user experience and drive business goals.
+      I thrive on solving problems and crafting intuitive designs that
+      prioritize the user experience and exceed expectations. Let’s create
+      something amazing together! 🚀
     </p>
   </div>
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style lang="scss" scoped></style>

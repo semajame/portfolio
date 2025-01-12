@@ -23,14 +23,12 @@
           /></svg
         >Cebu, Philippines
       </p>
-      <h3 class="mt-1 font-medium text-gray-200 text-md">
-        Full-Stack Developer
-      </h3>
+      <h3 class="mt-1 font-medium text-gray-200 text-md">Frontend Developer</h3>
       <div class="flex items-center justify-start gap-3 mt-3">
         <NuxtLink
           to="https://docs.google.com/document/d/112OLJD-Xgj8ZFYq11TL0M48Pj4RzdJum/edit?usp=sharing&ouid=101439099929747855943&rtpof=true&sd=true"
           target="_blank"
-          class="btn bg-white text-black px-2 py-1.5 rounded-md text-xs flex justify-center items-center gap-1 hover:-translate-y-0.5 transition-all duration-200"
+          class="btn bg-white text-black px-2 py-1.5 border rounded-md text-xs flex justify-center items-center gap-1 transition-all duration-200 hover:text-white hover:bg-black"
         >
           <svg
             data-testid="geist-icon"
@@ -52,7 +50,7 @@
         <NuxtLink
           to="https://github.com/semajame/"
           target="_blank"
-          class="text-xs border border-gray-500 px-2 py-1.5 rounded-md hover:bg-gray-900 hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-1"
+          class="text-xs border border-gray-500 px-2 py-1.5 rounded-md transition-all duration-200 flex justify-center items-center gap-1 hover:text-black hover:bg-white"
         >
           <svg
             data-testid="geist-icon"
@@ -77,7 +75,7 @@
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style lang="scss" scoped></style>

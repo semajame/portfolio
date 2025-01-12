@@ -27,7 +27,7 @@
         :key="index"
         :to="event.link"
         target="_blank"
-        class="text-xs border border-black p-2 bg-black rounded-md hover:bg-slate-900 transition duration-150 hover:border-slate-900"
+        class="text-xs border border-black p-2 bg-black rounded-md hover:bg-zinc-900 transition duration-150 hover:border-zinc-900"
       >
         <h4 class="text-md font-bold">{{ event.title }}</h4>
         <p class="text-xs link">
@@ -41,31 +41,31 @@
 <script setup>
 const events = [
   {
-    title: "Tour De Tech",
-    location: "Bai Hotel",
-    link: "https://drive.google.com/file/d/1hoAnJ9YUP2pLwuGZaG8RGVMrluhM5lFJ/view?usp=drive_link",
+    title: 'Tour De Tech',
+    location: 'Bai Hotel',
+    link: 'https://drive.google.com/file/d/1hoAnJ9YUP2pLwuGZaG8RGVMrluhM5lFJ/view?usp=drive_link',
   },
   {
-    title: "Tour De Tech: Talent Caravan",
-    location: "Bai Hotel",
-    link: "https://drive.google.com/file/d/1jgn8KMQ8VEBNWQ3by8ybqSso_DfLLUIN/view?usp=sharing",
+    title: 'Tour De Tech: Talent Caravan',
+    location: 'Bai Hotel',
+    link: 'https://drive.google.com/file/d/1jgn8KMQ8VEBNWQ3by8ybqSso_DfLLUIN/view?usp=sharing',
   },
   {
-    title: "Cebu ICT Student Congress",
-    location: "CTU Main Campus Gym",
-    link: "https://certificates.psite7.org/storage/templates/diJO48BX5rT7azLHEurXch3KjJGXxMaGGbxjCod4.jpg",
+    title: 'Cebu ICT Student Congress',
+    location: 'CTU Main Campus Gym',
+    link: 'https://certificates.psite7.org/storage/templates/diJO48BX5rT7azLHEurXch3KjJGXxMaGGbxjCod4.jpg',
   },
   {
-    title: "Cebu Interschool Hackathon",
-    location: "Northwinds Hotel",
-    link: "https://drive.google.com/file/d/1UE_tRg2FYI-URoTEJm_IgFtvIm3jzT26/view?usp=sharing",
+    title: 'Cebu Interschool Hackathon',
+    location: 'Northwinds Hotel',
+    link: 'https://drive.google.com/file/d/1UE_tRg2FYI-URoTEJm_IgFtvIm3jzT26/view?usp=sharing',
   },
   {
-    title: "Cebu Interschool Hackathon",
-    location: "Cebu Provincial Capitol",
-    link: "https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing",
+    title: 'Cebu Interschool Hackathon',
+    location: 'Cebu Provincial Capitol',
+    link: 'https://drive.google.com/file/d/1-Sk6AQkyXD6Ta0gtr2nYiHRCW5AaBk5k/view?usp=sharing',
   },
-];
+]
 </script>
 
 <style></style>

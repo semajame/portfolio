@@ -17,12 +17,16 @@
       Connect
     </h3>
     <div class="my-5 text-sm">
-      <div class="text-xs border border-black p-2 bg-black rounded-md">
+      <div
+        class="text-xs border border-black p-2 bg-black rounded-md hover:bg-zinc-900 hover:border-zinc-900"
+      >
         <h4 class="text-sm font-bold">Email</h4>
         <p class="text-md">jamesanquillano@gmail.com</p>
       </div>
 
-      <div class="text-xs border border-black p-2 bg-black rounded-md mt-3">
+      <div
+        class="text-xs border border-black p-2 bg-black rounded-md mt-3 hover:bg-zinc-900 hover:border-zinc-900"
+      >
         <h4 class="text-sm font-bold">Phone Number</h4>
         <p class="text-md">09369533064</p>
       </div>
@@ -33,7 +37,7 @@
           to="https://www.linkedin.com/in/james-anquillano-47b001263/"
           target="_blank"
           aria-label="Visit LinkedIn profile"
-          class="border-black p-2 bg-black rounded-md hover:-translate-y-0.5 transition-all duration-200"
+          class="border-black p-2 bg-black rounded-md hover:bg-zinc-900 transition-all duration-200"
         >
           <svg
             class="w-5 h-5"
@@ -49,7 +53,7 @@
           to="https://www.instagram.com/jaymesevilla/"
           target="_blank"
           aria-label="Visit instagram profile"
-          class="border-black p-2 bg-black rounded-md hover:-translate-y-0.5 transition-all duration-200"
+          class="border-black p-2 bg-black rounded-md hover:bg-zinc-900 transition-all duration-200"
         >
           <svg
             class="w-5 h-5"
@@ -67,7 +71,7 @@
           to="  https://www.facebook.com/jsev.12"
           target="_blank"
           aria-label="Visit facebook profile"
-          class="border-black p-2 bg-black rounded-md hover:-translate-y-0.5 transition-all duration-200"
+          class="border-black p-2 bg-black rounded-md hover:bg-zinc-900 transition-all duration-200"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +92,7 @@
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style lang="scss" scoped></style>

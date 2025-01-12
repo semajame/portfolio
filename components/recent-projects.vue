@@ -32,10 +32,14 @@
         :key="index"
         :to="project.link"
         target="_blank"
-        class="bento hover:-translate-y-0.5 transition-all duration-100"
+        class="bento transition-all duration-100 hover:bg-zinc-900"
       >
-        <h3 class="text-sm font-bold">{{ project.title }}</h3>
-        <p class="text-xs my-1">{{ project.description }}</p>
+        <h3 class="text-sm font-bold">
+          {{ project.title }}
+        </h3>
+        <p class="text-xs my-1">
+          {{ project.description }}
+        </p>
         <p
           class="link text-xs border border-black p-2 bg-black rounded-md mt-2"
         >
@@ -49,33 +53,31 @@
 <script setup>
 const projects = [
   {
-    title: "The Greenery",
-    description: "Ecommerce",
-    link: "https://greenery-ecommerce.vercel.app/",
-    displayLink: "greenery-ecommerce.vercel.app",
+    title: 'The Greenery',
+    description: 'Ecommerce',
+    link: 'https://greenery-ecommerce.vercel.app/',
+    displayLink: 'greenery-ecommerce.vercel.app',
   },
   {
-    title: "Animal Kingdom",
-    description: "Real animal information using api",
-    link: "https://wild-kingdom.vercel.app/",
-    displayLink: "wild-kingdom.vercel.app",
+    title: 'Wild Kingdom',
+    description: 'Real animal information using api',
+    link: 'https://wild-kingdom.vercel.app/',
+    displayLink: 'wild-kingdom.vercel.app',
     tech: {
-      skills: ["Nuxt", "Tailwind"],
+      skills: ['Nuxt', 'Tailwind'],
     },
   },
   {
-    title: "CryptoCurrency X",
-    description: "Real time crypto updates using api",
-    link: "https://crypto-currency-x.vercel.app/",
-    displayLink: "crypto-currency-x.vercel.app",
+    title: 'CryptoCurrency X',
+    description: 'Real time crypto updates using api',
+    link: 'https://crypto-currency-x.vercel.app/',
+    displayLink: 'crypto-currency-x.vercel.app',
   },
   {
-    title: "Benedicto College Scheduling",
-    description: "Online class scheduling",
-    link: "https://bc-scheduling-1024.vercel.app/",
-    displayLink: "bc-scheduling-1024.vercel.app",
+    title: 'Benedicto College Scheduling',
+    description: 'Online class scheduling',
+    link: 'https://bc-scheduling-1024.vercel.app/',
+    displayLink: 'bc-scheduling-1024.vercel.app',
   },
-];
+]
 </script>
-
-<style lang="scss" scoped></style>
