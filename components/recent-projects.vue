@@ -63,15 +63,12 @@ const projects = [
     description: 'Real animal information using api',
     link: 'https://wild-kingdom.vercel.app/',
     displayLink: 'wild-kingdom.vercel.app',
-    tech: {
-      skills: ['Nuxt', 'Tailwind'],
-    },
   },
   {
-    title: 'CryptoCurrency X',
-    description: 'Real time crypto updates using api',
-    link: 'https://crypto-currency-x.vercel.app/',
-    displayLink: 'crypto-currency-x.vercel.app',
+    title: 'Apple Ui',
+    description: 'Frontend of the famous technology brand Apple',
+    link: 'https://apple-uii.vercel.app/',
+    displayLink: 'apple-uii.vercel.app',
   },
   {
     title: 'Benedicto College Scheduling',

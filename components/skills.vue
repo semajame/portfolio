@@ -53,8 +53,8 @@
 <script setup>
 const skills = [
   'Vue',
-  'Angular',
   'Nuxt',
+  'Angular',
   'Tailwind',
   'Bootstrap',
   'SCSS',
